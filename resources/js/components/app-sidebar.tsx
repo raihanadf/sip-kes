@@ -30,6 +30,8 @@ import {
   ClipboardList,
   Building,
   Users,
+  Contrast,
+  RectangleEllipsis,
 } from "lucide-react"
 import AppLogo from "./app-logo"
 
@@ -104,12 +106,37 @@ const navGroups: NavGroup[] = [
     icon: FileSignature,
     items: [
       {
-        title: "Surat Rujukan",
+        title: "General Consent",
         href: "/persuratan/rujukan",
         icon: FileCheck,
       },
       {
-        title: "Surat Keterangan",
+        title: "Informed Consent",
+        href: "/persuratan/rujukan",
+        icon: FileText,
+      },
+      {
+        title: "SK Sehat",
+        href: "/persuratan/keterangan",
+        icon: FileText,
+      },
+      {
+        title: "SK Sakit",
+        href: "/persuratan/keterangan",
+        icon: FileText,
+      },
+      {
+        title: "Surat Kontrol",
+        href: "/persuratan/keterangan",
+        icon: FileText,
+      },
+      {
+        title: "Surat Rujukan RI",
+        href: "/persuratan/keterangan",
+        icon: FileText,
+      },
+      {
+        title: "Surat Kematian",
         href: "/persuratan/keterangan",
         icon: FileText,
       },
@@ -141,9 +168,19 @@ const navGroups: NavGroup[] = [
         icon: Building,
       },
       {
-        title: "Something",
-        href: "/something",
+        title: "Profil",
+        href: "/settings/profile",
         icon: Users,
+      },
+      {
+        title: "Password",
+        href: "/settings/password",
+        icon: RectangleEllipsis,
+      },
+      {
+        title: "Tampilan",
+        href: "/settings/appearance",
+        icon: Contrast,
       },
     ],
   },
