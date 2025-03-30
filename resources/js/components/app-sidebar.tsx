@@ -1,38 +1,9 @@
 import { NavFooter } from "@/components/nav-footer"
 import { NavMain } from "@/components/nav-main"
-import {
-  Sidebar,
-  SidebarContent,
-  SidebarFooter,
-  SidebarHeader,
-  SidebarMenu,
-  SidebarMenuButton,
-  SidebarMenuItem,
-  SidebarRail,
-} from "@/components/ui/sidebar"
+import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem, SidebarRail, } from "@/components/ui/sidebar"
 import type { NavItem, NavGroup } from "@/types"
 import { Link } from "@inertiajs/react"
-import {
-  ClipboardPlus,
-  LayoutGrid,
-  Stethoscope,
-  Pill,
-  Receipt,
-  FileText,
-  Settings,
-  UserPlus,
-  CircleUser,
-  Bed,
-  Ambulance,
-  FileCheck,
-  FileSignature,
-  History,
-  ClipboardList,
-  Building,
-  Users,
-  Contrast,
-  RectangleEllipsis,
-} from "lucide-react"
+import { ClipboardPlus, LayoutGrid, Stethoscope, Pill, Receipt, FileText, Settings, UserPlus, CircleUser, Bed, Ambulance, FileCheck, FileSignature, History, ClipboardList, Building, Users, Contrast, RectangleEllipsis, } from "lucide-react"
 import AppLogo from "./app-logo"
 
 const mainNavItems: NavItem[] = [
@@ -164,7 +135,7 @@ const navGroups: NavGroup[] = [
     items: [
       {
         title: "Profil Klinik",
-        href: "/pengaturan/profil",
+        href: "/settings/profil-klinik",
         icon: Building,
       },
       {

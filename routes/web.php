@@ -11,9 +11,18 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
         return Inertia::render('dashboard');
     })->name('dashboard');
-    Route::get('something', function () {
-        return Inertia::render('something');
-    })->name('something');
+    Route::get('farmasi', function () {
+        return Inertia::render('farmasi');
+    })->name('farmasi');
+
+    Route::get('pemeriksaan/rawat-inap', function () {
+        return Inertia::render('pemeriksaan/rawat-inap');
+    })->name('pemeriksaan/rawat-inap');
+
+    Route::get('settings/profil-klinik', function () {
+        return Inertia::render('settings/profil-klinik');
+    })->name('settings/profil-klinik');
+
 });
 
 require __DIR__ . '/settings.php';
