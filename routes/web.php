@@ -22,7 +22,6 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('settings/profil-klinik', function () {
         return Inertia::render('settings/profil-klinik');
     })->name('settings/profil-klinik');
-
 });
 
 require __DIR__ . '/settings.php';
