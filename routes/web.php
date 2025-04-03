@@ -13,7 +13,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
         return Inertia::render('dashboard');
     })->name('dashboard');
     Route::get('farmasi', function () {
-        return Inertia::render('farmasi');
+        return Inertia::render('pharmacy');
     })->name('farmasi');
 
     Route::get('pemeriksaan/rawat-inap', function () {

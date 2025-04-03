@@ -10,7 +10,7 @@ const breadcrumbs: BreadcrumbItem[] = [
   },
 ];
 
-export default function Farmasi() {
+export default function Pharmacy() {
   return (
     <AppLayout breadcrumbs={breadcrumbs}>
       <Head title="Farmasi" />
