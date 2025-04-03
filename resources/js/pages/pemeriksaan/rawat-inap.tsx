@@ -8,6 +8,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import AppLayout from "@/layouts/app-layout"
+import { Head } from "@inertiajs/react"
 
 type BreadcrumbItem = {
   title: string
@@ -43,6 +44,7 @@ export default function RawatInapPage() {
 
   return (
     <AppLayout breadcrumbs={breadcrumbs}>
+      <Head title="Rawat Inap" />
       <div className="py-6 px-4 max-w-7xl mx-auto">
         <div className="flex justify-between items-center w-full max-w-3xl mx-auto mb-8">
           {steps.map((step, index) => (
