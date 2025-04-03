@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('gelar_depan', 50);
             $table->string('gelar_belakang', 50);
             $table->string('jadwal_layanan', 50);
+            $table->softDeletes();
         });
 
         Schema::create('perawat', function (Blueprint $table) {

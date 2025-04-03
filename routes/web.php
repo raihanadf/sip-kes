@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Master\DoctorController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -22,6 +23,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('settings/profil-klinik', function () {
         return Inertia::render('settings/profil-klinik');
     })->name('settings/profil-klinik');
+
+    Route::resource('dokter', DoctorController::class);
 });
 
 require __DIR__ . '/settings.php';

@@ -1,9 +1,9 @@
 import { NavFooter } from "@/components/nav-footer"
 import { NavMain } from "@/components/nav-main"
 import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem, SidebarRail, } from "@/components/ui/sidebar"
-import type { NavItem, NavGroup } from "@/types"
+import type { NavGroup, NavItem } from "@/types"
 import { Link } from "@inertiajs/react"
-import { ClipboardPlus, LayoutGrid, Stethoscope, Pill, Receipt, FileText, Settings, UserPlus, CircleUser, Bed, Ambulance, FileCheck, FileSignature, History, ClipboardList, Building, Users, Contrast, RectangleEllipsis, } from "lucide-react"
+import { Ambulance, Bed, Building, CircleUser, ClipboardList, ClipboardPlus, Contrast, FileCheck, FileSignature, FileText, History, LayoutGrid, Pill, Receipt, RectangleEllipsis, Settings, Stethoscope, UserPlus, Users, } from "lucide-react"
 import AppLogo from "./app-logo"
 
 const mainNavItems: NavItem[] = [
@@ -26,6 +26,11 @@ const mainNavItems: NavItem[] = [
     title: "Laporan",
     href: "/laporan",
     icon: FileText,
+  },
+  {
+    title: "Dokter",
+    href: "/dokter",
+    icon: Stethoscope,
   },
 ]
 
