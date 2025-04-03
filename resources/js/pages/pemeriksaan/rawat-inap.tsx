@@ -14,10 +14,8 @@ type BreadcrumbItem = {
   href: string
 }
 
-const Head: React.FC<{ title: string }> = () => null
-
-export default function MedicalStepperPage() {
-  const [currentStep, setCurrentStep] = useState(2) // Default to Pemeriksaan (index 2)
+export default function RawatInapPage() {
+  const [currentStep, setCurrentStep] = useState(2)
 
   const steps = [
     { icon: <Clipboard className="h-6 w-6" />, label: "Pendaftaran" },
@@ -45,7 +43,6 @@ export default function MedicalStepperPage() {
 
   return (
     <AppLayout breadcrumbs={breadcrumbs}>
-      <Head title="Medical Stepper" />
       <div className="py-6 px-4 max-w-7xl mx-auto">
         <div className="flex justify-between items-center w-full max-w-3xl mx-auto mb-8">
           {steps.map((step, index) => (
@@ -55,10 +52,10 @@ export default function MedicalStepperPage() {
                 onClick={() => handleStepClick(index)}
               >
                 <div className={`w-12 h-12 rounded-full flex items-center justify-center ${index === currentStep
+                  ? "bg-primary text-primary-foreground"
+                  : index < currentStep
                     ? "bg-primary text-primary-foreground"
-                    : index < currentStep
-                      ? "bg-primary text-primary-foreground"
-                      : "bg-muted text-muted-foreground"
+                    : "bg-muted text-muted-foreground"
                   }`}>
                   {step.icon}
                 </div>
